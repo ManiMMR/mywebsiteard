@@ -2,32 +2,53 @@ body, html {
     margin: 0;
     padding: 0;
     text-size-adjust: 50px;
+    background-color: black;
   }
 
 @media (min-width:500px) {
-  #first_div {
+  #major_div {
+    background: url(stone_texture.jpg);
+    background-size: cover ;
+    height: 750px;
+  }
+
+  .first_div > div{   
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+    line-height: 2;
     margin: 10px;
-    height: 100px;
-    text-size-adjust: 25px;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 5%;
-    border-color: rgb(183, 178, 89);
+    padding: 20px;
+    width: 70px;
+    height: 50px;
+    border-radius: 25px 0px 25px 0px;
+    }
+
+  .first_div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 75px;
+    height: 400px;
+    font-size: 25px;
+    /* border-width: 1px;
+    border-style: solid; */
+    /* border-color: rgb(183, 178, 89); */
     background: url(wall_texture.jpg);
     background-size: cover;
     background-position: left top;
     background-repeat: repeat;
-    width: 200px;
-    height: 150px;
+    /* width: 200px;*/
     text-align: center;
+    border-radius: 25px;
   }
 
   .hero {
-    background-image: url("https://cdn.mos.cms.futurecdn.net/MeJKRWtvQSWg738hdoa9NF-1200-80.jpg"); /* Replace with your actual image path */
+    background-image: url("https://cdn.mos.cms.futurecdn.net/MeJKRWtvQSWg738hdoa9NF-1200-80.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 675px; /* Adjust height as needed */
+    height: 739px; /* Adjust height as needed */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,18 +62,26 @@ body, html {
     color: white;
     padding: 20px;
     border: 5px solid white;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: background for contrast */
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(0,0,0,0.7);
   }
 }
 
 @media (max-width: 499px) {
+  #first_div {
+    width: 50%;
+    margin: 10px auto;
+    border: 2px solid #ccc;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+
   .hero {
     background-image: url("https://cdn.cnn.com/cnn/interactive/2022/12/world/best-space-photos-2022/media/images/top2v.jpg"); /* Replace with your actual image path */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 1920px; /* Adjust height as needed */
+    height: 700px; /* Adjust height as needed */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,5 +97,42 @@ body, html {
     border: 5px solid white;
     background-color: rgba(0, 0, 0, 0.5); /* Optional: background for contrast */
     box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  }
+
+  #major_div {
+    background: url(stone_texture.jpg);
+    background-size: cover ;
+    height: 1000px;
+  }
+
+  .first_div > div{   
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+    line-height: 2;
+    margin: 10px;
+    padding: 20px;
+    width: 70px;
+    height: 50px;
+    border-radius: 25px 0px 25px 0px;
+    }
+
+  .first_div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 75px;
+    height: 450px;
+    font-size: 25px;
+    /* border-width: 1px;
+    border-style: solid; */
+    /* border-color: rgb(183, 178, 89); */
+    background: url(wall_texture.jpg);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: repeat;
+    /* width: 200px;*/
+    text-align: center;
+    border-radius: 25px;
   }
 }
