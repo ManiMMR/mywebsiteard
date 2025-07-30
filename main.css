@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    text-size-adjust: 50px;
+  }
+
+@media (min-width:500px) {
+  #first_div {
+    margin: 10px;
+    height: 100px;
+    text-size-adjust: 25px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5%;
+    border-color: rgb(183, 178, 89);
+    background: url(wall_texture.jpg);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: repeat;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+  }
+
+  .hero {
+    background-image: url("https://cdn.mos.cms.futurecdn.net/MeJKRWtvQSWg738hdoa9NF-1200-80.jpg"); /* Replace with your actual image path */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 675px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-family: serif;
+    color: white;
+    padding: 20px;
+    border: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: background for contrast */
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  }
+}
+
+@media (max-width: 499px) {
+  .hero {
+    background-image: url("https://cdn.cnn.com/cnn/interactive/2022/12/world/best-space-photos-2022/media/images/top2v.jpg"); /* Replace with your actual image path */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 1920px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    font-family: serif;
+    color: white;
+    padding: 20px;
+    border: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: background for contrast */
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  }
+}
